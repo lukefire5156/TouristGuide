@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chennai"></activity>
+        <activity android:name=".beach"></activity>
+        <activity android:name=".children" />
+        <activity android:name=".history" />
+        <activity android:name=".temple" />
+        <activity android:name=".chu" />
+        <activity android:name=".chennai" />
         <activity android:name=".vellore" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

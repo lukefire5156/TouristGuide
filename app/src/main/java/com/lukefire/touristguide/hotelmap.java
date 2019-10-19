@@ -8,12 +8,15 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class hotelmap extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    double latcur=12.9710,longcur=79.1639;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +41,56 @@ public class hotelmap extends FragmentActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        // GoogleMap mMap2 = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        LatLng sydney = new LatLng(latcur, longcur);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in SJT"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.animateCamera( CameraUpdateFactory.zoomTo( 12.0f ) );
+
+
+       /* Marker m1 = googleMap.addMarker(new MarkerOptions()
+                .position(new LatLng(latcur, longcur))
+                .anchor(0.5f, 0.5f)
+                .title("Title1")
+                .snippet("Snippet1")
+                );*/
+
+
+        Marker m2 = googleMap.addMarker(new MarkerOptions()
+                .position(new LatLng(12.9555,79.1370))
+                .anchor(0.5f, 0.5f)
+                .title("Title2")
+                .snippet("Snippet2")
+                );
+        //////////////////////////////////////////////
+
+        /* if (mGoogleApiClient == null) {
+    mGoogleApiClient = new GoogleApiClient.Builder(this)
+        .addConnectionCallbacks(this)
+        .addOnConnectionFailedListener(this)
+        .addApi(LocationServices.API)
+        .build();
+}
+if (mGoogleApiClient != null) {
+    mGoogleApiClient.connect();
+}
+public class MainActivity extends ActionBarActivity implements
+        ConnectionCallbacks, OnConnectionFailedListener {
+    ...
+    @Override
+    public void onConnected(Bundle connectionHint) {
+        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
+                mGoogleApiClient);
+        if (mLastLocation != null) {
+            mLatitudeText.setText(String.valueOf(mLastLocation.getLatitude()));
+            mLongitudeText.setText(String.valueOf(mLastLocation.getLongitude()));
+        }
+    }
+}*/
+        ////////////////////////////////////////////
+
+
     }
 }

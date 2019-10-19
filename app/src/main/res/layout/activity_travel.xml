@@ -7,16 +7,54 @@
     tools:context=".travel">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="261dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="451dp"
-        android:text="travel"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="208dp"
+        android:text="FILTER"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RGroup"
+        android:layout_width="155dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="294dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <RadioButton
+            android:id="@+id/temple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temple" />
+
+        <RadioButton
+            android:id="@+id/HistoricPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historic Places" />
+
+        <RadioButton
+            android:id="@+id/children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="places for children" />
+
+        <RadioButton
+            android:id="@+id/beach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="beach places" />
+
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
