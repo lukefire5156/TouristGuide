@@ -5,5 +5,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".signup">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="118dp"
+        android:text="SIGNUP"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/suemail"
+        android:layout_width="306dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/suname"
+        android:layout_width="306dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suemail" />
+
+    <EditText
+        android:id="@+id/supwd"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sureg" />
+
+    <EditText
+        android:id="@+id/confirmpwd"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supwd" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="216dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="107dp"
+        android:text="signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpwd" />
+
+    <EditText
+        android:id="@+id/sureg"
+        android:layout_width="306dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Aadhar Card Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

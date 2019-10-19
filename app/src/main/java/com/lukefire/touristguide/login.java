@@ -24,7 +24,7 @@ public class login extends AppCompatActivity {
         hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(login.this, hotel.class));
+                startActivity(new Intent(login.this, hotelmap.class));
             }
         });
         rest=(ImageView) findViewById(R.id.rest);
