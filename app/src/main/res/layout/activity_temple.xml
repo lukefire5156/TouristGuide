@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/temple"
         android:layout_width="351dp"
         android:layout_height="280dp"
         android:layout_marginStart="15dp"
@@ -39,5 +39,5 @@
         android:text="18 min (9.3 km) via NH75"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/temple" />
 </androidx.constraintlayout.widget.ConstraintLayout>

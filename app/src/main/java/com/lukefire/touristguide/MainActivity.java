@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText password;
     private Button login;
     private Button signup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
